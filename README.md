@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Time Slice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Vite + ReactJS** application built with **TypeScript**, featuring a dynamic **doughnut chart** (using **Chart.js**) that visually represents how hours in a day are allocated to different tasks. Users can add, edit, complete, or delete tasks, with the total task hours always constrained to 24 hours per day. Any unallocated time is displayed as "Free Time" in the chart.
 
-Currently, two official plugins are available:
+## Features
+- **Add Tasks:** Create new tasks by specifying their duration (in hours).
+- **Edit Tasks:** Modify existing tasks' details or durations.
+- **Complete Tasks:** Mark tasks as complete and remove them from active tracking.
+- **Delete Tasks:** Remove unwanted tasks from the list.
+- **Dynamic Chart:** A doughnut chart dynamically adjusts to show how hours are distributed among tasks, with unallocated time represented as "Free Time."
+- **24-Hour Limit:** Ensure the total hours of tasks do not exceed 24. (will implement week, month, years functionality)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Vite**: Fast, modern development build tool.
+- **ReactJS**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript that helps in building robust, scalable applications.
+- **Chart.js**: Popular charting library for visual data representation.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Add Tasks**: Use the input form to create tasks with a specific duration in hours.
+- **Edit Tasks**: Click on any task in the list to edit its details.
+- **Complete/Delete Tasks**: Use the respective buttons to mark a task as complete or delete it.
+- The **doughnut chart** will update in real-time to reflect the changes.
 
-- Configure the top-level `parserOptions` property like this:
+## Contributing
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Contributions are welcome! Please open an issue or submit a pull request.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Todo
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Fix a bug where if a task is deleted, it messes up editing functionality
+- Make the CSS prettier.
+- Clean up the code, there are a few functions that can be more uniform/efficient
+- Add clearer/more abundant comments
+- Implement week/month/year functionality. Right now only works with 24 hours. 
