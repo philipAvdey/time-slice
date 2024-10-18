@@ -1,0 +1,10 @@
+.chart{
+  width: 50vw;
+  height: 50vh;
+}
+
+button{
+  margin: 15px;
+}
+
+/* might want to remove scrolling when the modal is clicked.  */

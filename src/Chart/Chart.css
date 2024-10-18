@@ -1,0 +1,14 @@
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+
+.chart{
+    margin: 50px;
+}
+
+.no-pointers{
+    pointer-events: none;
+}
