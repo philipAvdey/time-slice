@@ -32,7 +32,8 @@ function App() {
   // const datasetindex to keep track of the index of clicked arc.
   const [datasetIndex, setDatasetIndex] = useState(-1);
 
-  const [totalHours, setTotalHours] = useState(24);
+  // const [totalHours, setTotalHours] = useState(24);
+  const totalHours = 24;
   const [sleep, setSleep] = useState(totalHours / 3);
   const [freetime, setFreeTime] = useState(totalHours - sleep);
   const [slicesList, setSlicesList] = useState<Slice[]>([
