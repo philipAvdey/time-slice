@@ -1,5 +1,4 @@
 import "./Chart.css";
-import { useEffect, useState } from "react";
 import { Slice } from '../Slice';
 
 import {
@@ -9,9 +8,7 @@ import {
   Tooltip,
   Legend,
   Colors,
-  ChartData,
-  ChartEvent,
-  ActiveElement,
+ 
 } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 ChartJS.register(Colors, ArcElement, Tooltip, Legend, PieController);
@@ -50,6 +47,7 @@ export const Chart = (props: Props) => {
       },
     },
     onClick: function (event: any, elements: any[]) {
+      event;
       const datasetIndex = elements[0].index;
       props.handleArcClick(datasetIndex);
     },

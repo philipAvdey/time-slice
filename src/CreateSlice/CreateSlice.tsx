@@ -11,10 +11,10 @@ export const CreateSlice = (props: Props) => {
   const [newSliceName, setNewSliceName] = useState("");
   const [newSliceHours, setNewSliceHours] = useState(0);
 
-  const handleSave = () => {
-    props.sliceFunction(newSliceName, newSliceHours, props.datasetIndex);
+  // const handleSave = () => {
+  //   props.sliceFunction(newSliceName, newSliceHours, props.datasetIndex);
     
-  };
+  // };
 
   return (
     <div className="popup">
