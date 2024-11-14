@@ -11,10 +11,10 @@ This project is a **Vite + ReactJS** application built with **TypeScript**, feat
 - **24-Hour Limit:** Ensure the total hours of tasks do not exceed 24. (will implement week, month, years functionality)
 
 ## Tech Stack
-- **Vite**: Fast, modern development build tool.
-- **ReactJS**: JavaScript library for building user interfaces.
-- **TypeScript**: Typed superset of JavaScript that helps in building robust, scalable applications.
-- **Chart.js**: Popular charting library for visual data representation.
+- **Vite**
+- **ReactJS**
+- **TypeScript**
+- **Chart.js**
 
 ## Usage
 
